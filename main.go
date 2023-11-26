@@ -58,9 +58,6 @@ var (
 	changeDisplaySettings = user32.NewProc("ChangeDisplaySettingsW")
 )
 
-// reference: https://github.com/Clicketyclick/ChangeScreenOrientation
-// reference: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enumdisplaysettingsw
-// reference: https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsw
 func main() {
 	var dm DEVMODE
 	dm.dmSize = int16(unsafe.Sizeof(dm))
